@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header-footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+        }
+        .main-content {
+            width: 60%;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 35%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .sidebar:hover {
+            background-color: #ddd;
+        }
+        input[type="text"] {
+            width: 200px;
+            transition: width 0.3s;
+        }
+        input[type="text"]:focus {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-footer">
+        <h1>Rock Paper Scissors Game</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="https://www.bing.com">Bing</a></li>
+            <li><a href="https://www.yahoo.com">Yahoo</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main class="main-content">
+            <h2>Enter Your Details</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="choice">Choose:</label>
+                <select id="choice" name="choice">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                
+                <button type="submit">Play</button>
+            </form>
+        </main>
+        
+        <aside class="sidebar">
+            <h2>How to Play</h2>
+            <p>Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.</p>
+        </aside>
+    </div>
+    
+    <footer class="header-footer">
+        <p>Enjoy the game!</p>
+    </footer>
+</body>
+</html>
